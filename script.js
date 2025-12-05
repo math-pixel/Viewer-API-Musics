@@ -110,7 +110,7 @@ async function performSearch() {
 }
 
 function downloadItem(platform, id) {
-    const url = `${API_URL}/${platform}/${id}`;
+    const url = `${API_URL}/download/${platform}/${id}`;
     fetch(url).then(res => {
         if(res.ok) alert("Téléchargement lancé !");
     }).catch(err => console.error(err));
